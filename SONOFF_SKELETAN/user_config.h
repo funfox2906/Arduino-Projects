@@ -46,10 +46,10 @@
 #define WIFI_SUBNETMASK        "255.255.255.0"   // [IpAddress3] If not using DHCP set Network mask
 #define WIFI_DNS               "8.8.8.8"    // [IpAddress4] If not using DHCP set DNS IP address (might be equal to WIFI_GATEWAY)
 
-#define STA_SSID1              "DuHuHuLo"                  // [Ssid1] Wifi SSID
-#define STA_PASS1              "hoiconcac"                // [Password1] Wifi password
-#define STA_SSID2              "DucLee"                // [Ssid2] Optional alternate AP Wifi SSID
-#define STA_PASS2              "0101010101"                // [Password2] Optional alternate AP Wifi password
+#define STA_SSID1              "DucLee"                  // [Ssid1] Wifi SSID
+#define STA_PASS1              "Duc2906@ELTE"                // [Password1] Wifi password
+#define STA_SSID2              "Telekom-c92090"                // [Ssid2] Optional alternate AP Wifi SSID
+#define STA_PASS2              "WGASVEGSGDOPI1KL"                // [Password2] Optional alternate AP Wifi password
 #define WIFI_CONFIG_TOOL       WIFI_WPSCONFIG    // [WifiConfig] Default tool if wifi fails to connect
                                                  //   (WIFI_RESTART, WIFI_SMARTCONFIG, WIFI_MANAGER, WIFI_WPSCONFIG, WIFI_RETRY, WIFI_WAIT)
 
