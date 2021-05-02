@@ -61,14 +61,14 @@
 #define WEB_LOG_LEVEL          LOG_LEVEL_INFO    // [WebLog] (LOG_LEVEL_NONE, LOG_LEVEL_ERROR, LOG_LEVEL_INFO, LOG_LEVEL_DEBUG, LOG_LEVEL_DEBUG_MORE)
 
 // -- Ota -----------------------------------------
-#define OTA_URL                "Contact AF-GAMMA" //http://sonoff.maddox.co.uk/tasmota/sonoff.bin"  // [OtaUrl]
+#define OTA_URL                "Contact Duc Le Thanh" //http://sonoff.maddox.co.uk/tasmota/sonoff.bin"  // [OtaUrl]
 
 // -- MQTT ----------------------------------------
-#define MQTT_USE               1                 // [SetOption3] Select default MQTT use (0 = Off, 1 = On)
+#define MQTT_USE               1       // [SetOption3] Select default MQTT use (0 = Off, 1 = On)
 
-#define MQTT_HOST              ""                // [MqttHost]
-#define MQTT_FINGERPRINT1      "A5 02 FF 13 99 9F 8B 39 8E F1 83 4F 11 23 65 0B 32 36 FC 07"  // [MqttFingerprint1]
-#define MQTT_FINGERPRINT2      "A5 02 FF 13 99 9F 8B 39 8E F1 83 4F 11 23 65 0B 32 36 FC 07"  // [MqttFingerprint2]
+#define MQTT_HOST              "192.168.1.110"                
+#define MQTT_FINGERPRINT1      "A5 02 FF 13 99 9F 8B 39 8E F1 83 4F 11 23 65 0B 32 36 FC 07" 
+#define MQTT_FINGERPRINT2      "A5 02 FF 13 99 9F 8B 39 8E F1 83 4F 11 23 65 0B 32 36 FC 07"  
 #define MQTT_PORT              1883              
 #define MQTT_USER              "DVES_USER"      
 #define MQTT_PASS              "DVES_PASS"      
@@ -87,10 +87,10 @@
 #define MQTT_FULLTOPIC         "%prefix%/%topic%/" 
 
 // %prefix% token options
-#define SUB_PREFIX             "cmnd"                         // [Prefix1] Sonoff devices subscribe to %prefix%/%topic% being SUB_PREFIX/MQTT_TOPIC and SUB_PREFIX/MQTT_GRPTOPIC
-#define PUB_PREFIX             "stat"                         // [Prefix2] Sonoff devices publish to %prefix%/%topic% being PUB_PREFIX/MQTT_TOPIC
-#define PUB_PREFIX2            "tele"                          // [Prefix3] Sonoff devices publish telemetry data to %prefix%/%topic% being PUB_PREFIX2/MQTT_TOPIC/UPTIME, POWER and TIME
-                                                               //   May be named the same as PUB_PREFIX
+#define SUB_PREFIX             "cmnd"                        
+#define PUB_PREFIX             "stat"                         
+#define PUB_PREFIX2            "tele"                         
+                                                               
 // %topic% token options (also ButtonTopic and SwitchTopic)
 #define MQTT_TOPIC             PROJECT           // [Topic] (unique) MQTT device topic
 #define MQTT_GRPTOPIC          "channels"         // [GroupTopic] MQTT Group topic
