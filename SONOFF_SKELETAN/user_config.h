@@ -41,17 +41,17 @@
 #define SAVE_STATE             1                 // [SetOption0] Save changed power state to Flash (0 = disable, 1 = enable)
 
 // -- Wifi ----------------------------------------
-#define WIFI_IP_ADDRESS        "0.0.0.0"         // [IpAddress1] Set to 0.0.0.0 for using DHCP or IP address
-#define WIFI_GATEWAY           "192.168.1.1"   // [IpAddress2] If not using DHCP set Gateway IP address
-#define WIFI_SUBNETMASK        "255.255.255.0"   // [IpAddress3] If not using DHCP set Network mask
-#define WIFI_DNS               "8.8.8.8"    // [IpAddress4] If not using DHCP set DNS IP address (might be equal to WIFI_GATEWAY)
+#define WIFI_IP_ADDRESS        "0.0.0.0"         
+#define WIFI_GATEWAY           "192.168.1.1"  
+#define WIFI_SUBNETMASK        "255.255.255.0"   
+#define WIFI_DNS               "8.8.8.8"   
 
-#define STA_SSID1              "DucLee"                  // [Ssid1] Wifi SSID
-#define STA_PASS1              "Duc2906@ELTE"                // [Password1] Wifi password
-#define STA_SSID2              "Telekom-c92090"                // [Ssid2] Optional alternate AP Wifi SSID
-#define STA_PASS2              "WGASVEGSGDOPI1KL"                // [Password2] Optional alternate AP Wifi password
-#define WIFI_CONFIG_TOOL       WIFI_WPSCONFIG    // [WifiConfig] Default tool if wifi fails to connect
-                                                 //   (WIFI_RESTART, WIFI_SMARTCONFIG, WIFI_MANAGER, WIFI_WPSCONFIG, WIFI_RETRY, WIFI_WAIT)
+#define STA_SSID1              "DucLee"                  
+#define STA_PASS1              "Duc2906@ELTE"               
+#define STA_SSID2              "Telekom-c92090"                
+#define STA_PASS2              "WGASVEGSGDOPI1KL"                
+#define WIFI_CONFIG_TOOL       WIFI_WPSCONFIG   
+                                                
 
 // -- Syslog --------------------------------------
 #define SYS_LOG_HOST           ""                // [LogHost] (Linux) syslog host
@@ -69,22 +69,22 @@
 #define MQTT_HOST              ""                // [MqttHost]
 #define MQTT_FINGERPRINT1      "A5 02 FF 13 99 9F 8B 39 8E F1 83 4F 11 23 65 0B 32 36 FC 07"  // [MqttFingerprint1]
 #define MQTT_FINGERPRINT2      "A5 02 FF 13 99 9F 8B 39 8E F1 83 4F 11 23 65 0B 32 36 FC 07"  // [MqttFingerprint2]
-#define MQTT_PORT              1883              // [MqttPort] MQTT port (10123 on CloudMQTT)
-#define MQTT_USER              "DVES_USER"       // [MqttUser] MQTT user
-#define MQTT_PASS              "DVES_PASS"       // [MqttPassword] MQTT password
+#define MQTT_PORT              1883              
+#define MQTT_USER              "DVES_USER"      
+#define MQTT_PASS              "DVES_PASS"      
 
-#define MQTT_BUTTON_RETAIN     0                 // [ButtonRetain] Button may send retain flag (0 = off, 1 = on)
-#define MQTT_POWER_RETAIN      0                 // [PowerRetain] Power status message may send retain flag (0 = off, 1 = on)
-#define MQTT_SWITCH_RETAIN     0                 // [SwitchRetain] Switch may send retain flag (0 = off, 1 = on)
+#define MQTT_BUTTON_RETAIN     0                 
+#define MQTT_POWER_RETAIN      0                 
+#define MQTT_SWITCH_RETAIN     0               
 
-#define MQTT_STATUS_OFF        "OFF"             // [StateText1] Command or Status result when turned off (needs to be a string like "0" or "Off")
-#define MQTT_STATUS_ON         "ON"              // [StateText2] Command or Status result when turned on (needs to be a string like "1" or "On")
-#define MQTT_CMND_TOGGLE       "TOGGLE"          // [StateText3] Command to send when toggling (needs to be a string like "2" or "Toggle")
-#define MQTT_CMND_HOLD         "HOLD"            // [StateText4] Command to send when button is kept down for over KEY_HOLD_TIME * 0.1 seconds (needs to be a string like "HOLD")
+#define MQTT_STATUS_OFF        "OFF"             
+#define MQTT_STATUS_ON         "ON"              
+#define MQTT_CMND_TOGGLE       "TOGGLE"          
+#define MQTT_CMND_HOLD         "HOLD"            
 
 // -- MQTT topics ---------------------------------
-  // Example "tasmota/bedroom/%topic%/%prefix%/" up to 80 characers
-#define MQTT_FULLTOPIC         "%prefix%/%topic%/" // [FullTopic] Subscribe and Publish full topic name - Legacy topic
+
+#define MQTT_FULLTOPIC         "%prefix%/%topic%/" 
 
 // %prefix% token options
 #define SUB_PREFIX             "cmnd"            // [Prefix1] Sonoff devices subscribe to %prefix%/%topic% being SUB_PREFIX/MQTT_TOPIC and SUB_PREFIX/MQTT_GRPTOPIC
